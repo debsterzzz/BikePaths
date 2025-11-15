@@ -57,10 +57,11 @@ header {
 
 #time-filter-label time,
 #time-filter-label em {
-  display: inline-flex; /* prevents slider from shifting around */
+  display: block; /* prevents slider from shifting around */
   color: #3d60d2;
   font-style: italic;
   width: 100%;
+  margin-left: auto;
 }
 
 #time-slider {
