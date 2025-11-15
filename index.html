@@ -12,7 +12,29 @@
 </head>
 <body>
     <h1>🚴🏼‍♀️ Bike Watching</h1>
+    <label id="time-filter-label">
+    Filter by time:
+    <input
+      id="time-slider"
+      type="range"
+      min="-1"
+      max="1440"
+      value="-1"
+      step="1"
+    />
+
+    <!-- The time readout -->
+    <time id="time-readout" datetime=""></time>
+
+    <!-- Visible only when slider = -1 -->
+    <em id="any-time">(any time)</em>
+  </label>
     <div id="map"></div>
+    <div class="legend">
+  <div style="--departure-ratio: 1">More Departures</div>
+  <div style="--departure-ratio: 0.5">Balanced</div>
+  <div style="--departure-ratio: 0">More Arrivals</div>
+</div>
     <script src="map.js" type="module"></script>
    
 </body>

@@ -36,6 +36,72 @@ body {
 }
 
 #map svg circle {
-  pointer-events: auto; /* So tooltips work */
+    pointer-events: auto;
+}
+  
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+#time-filter-label {
+  margin-left: auto; /* pushes slider to the right */
+  display: inline-block;
+  flex-direction:row;
+  gap: 0.25em;
+  align-items: baseline;
+}
+
+#time-filter-label time,
+#time-filter-label em {
+  display: inline-flex; /* prevents slider from shifting around */
+  color: #3d60d2;
+  font-style: italic;
+  width: 100%;
+}
+
+#time-slider {
+    width: 100%;
+}
+circle {
+--color-departures: steelblue;
+--color-arrivals: darkorange;
+--color: color-mix(
+  in oklch,
+  var(--color-departures) calc(100% * var(--departure-ratio)),
+  var(--color-arrivals)
+);
+fill: var(--color);
+}
+
+.legend {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  gap: 1px;
+  margin-top: 1em;
+  border: 1px solid #ffffff;
+}
+
+.legend > div {
+  flex: 1;
+  padding: 0.5em 1em;
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  text-align: center;
+  --color-departures: steelblue;
+  --color-arrivals: darkorange;
+
+  --color: color-mix(
+    in oklch,
+    var(--color-departures) calc(100% * var(--departure-ratio)),
+    var(--color-arrivals)
+  );
+
+  fill: var(--color);
+  background: var(--color);
 }
 
