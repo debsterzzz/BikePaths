@@ -48,7 +48,7 @@ header {
 }
 
 #time-filter-label {
-  margin-left: auto; /* pushes slider to the right */
+  margin-left:auto; /* pushes slider to the right */
   display: inline-block;
   flex-direction:row;
   gap: 0.25em;
@@ -58,7 +58,7 @@ header {
 #time-filter-label time,
 #time-filter-label em {
   display: block; /* prevents slider from shifting around */
-  color: #2143b2;
+  color: steelblue;
   font-style: italic;
   width: 100%;
   margin-left: auto;
