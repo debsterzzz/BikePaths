@@ -58,7 +58,7 @@ header {
 #time-filter-label time,
 #time-filter-label em {
   display: block; /* prevents slider from shifting around */
-  color: #3d60d2;
+  color: #2143b2;
   font-style: italic;
   width: 100%;
   margin-left: auto;
@@ -67,6 +67,8 @@ header {
 #time-slider {
     width: 100%;
 }
+
+
 circle {
 --color-departures: steelblue;
 --color-arrivals: darkorange;
